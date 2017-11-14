@@ -16,6 +16,9 @@ public class DatosEstadisticos{
         this.time=time;
     }
     public double dameTiempo(){
+        if(nTiempos == 0){
+            return 0;
+        }
         return time/nTiempos;
     }
 }
